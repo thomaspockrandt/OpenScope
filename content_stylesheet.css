@@ -1,0 +1,8 @@
+#zeisshack-bar {
+  width: 50%;
+  right: 150px;
+  bottom: 150px;
+  background-color: green;
+  position: fixed;
+  z-index: 1000;
+}
