@@ -21,5 +21,7 @@
     "activeTab",
     "https://zenbrowser.zeiss.com/*"
   ],
-  "web_accessible_resources": ["openscope-logo.png"]
+  "web_accessible_resources": [
+    "*.png"
+  ]
 }
