@@ -20,5 +20,6 @@
   "permissions": [
     "activeTab",
     "https://zenbrowser.zeiss.com/*"
-  ]
+  ],
+  "web_accessible_resources": ["openscope-logo.png"]
 }
