@@ -278,6 +278,7 @@
   font-size: 20px;
   opacity: 0;
   transition: opacity 0.4s cubic-bezier(0.3, 0.84, 0.44, 1);
+  pointer-events: none;
 }
 
 #pin:hover {

@@ -36,6 +36,7 @@ $(document).ready(function() {
           $("#popup").css({"left": x, "top": y});
           $("#pin").css({"left": x, "top": y});
           $("#popup").addClass("active");
+          $("#popup textarea").focus();
         }
 
         $(document.body).append(div);
