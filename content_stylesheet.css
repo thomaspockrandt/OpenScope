@@ -202,6 +202,7 @@
   margin-bottom: 6px;
   box-sizing: border-box;
   padding: 8px;
+  font-size: 24px;
 }
 
 #popup .submit {
@@ -226,7 +227,7 @@
 #pin {
   height: 50px;
   width: 50px;
-  background: red;
+  border-radius: 25px;
   position: absolute;
   margin-left: -25px;
   margin-top: -25px;
@@ -239,6 +240,8 @@
 #pin .avatar {
   width: 50px;
   height: 50px;position: relative;
+  transition: opacity 0.4s cubic-bezier(0.3, 0.84, 0.44, 1);
+  opacity: 1;
 }
 
 #pin .avatar:before {
@@ -268,13 +271,22 @@
   left: 70px;
   background-color: #FFF;
   border-radius: 3px;
-  width: 240px;
+  width: 360px;
   color: #000;
   padding: 10px;
   text-shadow: none;
-  font-size: 13px;
+  font-size: 20px;
   opacity: 0;
   transition: opacity 0.4s cubic-bezier(0.3, 0.84, 0.44, 1);
+}
+
+#pin:hover {
+  border: 1px solid rgba(255,255,255,1);
+}
+
+#pin:hover > .avatar {
+  opacity: 0;
+  cursor: crosshair;
 }
 
 #pin:hover > #pin-comment {
