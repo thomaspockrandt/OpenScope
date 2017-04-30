@@ -7,9 +7,12 @@
   height: 60px;
   top: 0;
   left: 0;
-  background: linear-gradient(to bottom, rgba(73,80,99,1) 0%, rgba(46,53,72,1) 100%);
+  background-color: #454d62;
   position: fixed;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #zeisshack-bar:before {
@@ -18,14 +21,78 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: rgba(0,0,0,0.5);
 }
 
 #openscope-logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   width: 200px;
   height: 36px;
+  margin-left: 10px;
+}
+
+#openscope-logo img {
+  height: 100%;
+}
+
+#collaborators {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  height: 40px;
+}
+
+#collaborators .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  opacity: 0.5;
+  position: relative;
+  margin-right: 12px;
+  background-color: #000;
+}
+
+#collaborators .avatar.active {
+  opacity: 1;
+  margin-right: 16px;
+}
+
+#collaborators .avatar.active:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 46px;
+  height: 46px;
+  border-radius: 24px;
+  border: 1px solid #00FFDD;
+}
+
+#collaborators .avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+#meta {
+  width: 200px;
+  height: 36px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#comment-button {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  background-color: #00FFDD;
+  border-radius: 4px;
+  color: #005A4E;
+  font-size: 13px;
+  text-shadow: none;
 }
