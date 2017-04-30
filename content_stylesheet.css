@@ -68,6 +68,10 @@
   border: 1px solid #00FFDD;
 }
 
+#collaborators .avatar:nth-child(2).active:before {
+  border-color: #FFB22C;
+}
+
 #collaborators .avatar img {
   width: 100%;
   height: 100%;
@@ -95,6 +99,11 @@
   font-size: 13px;
   font-weight: 400;
   text-shadow: none;
+}
+
+#collaborators .avatar:nth-child(2) .name .inside {
+  background-color: #FFB22C;
+  color: #993C00;
 }
 
 #collaborators .avatar:hover > .name {
