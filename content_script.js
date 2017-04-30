@@ -7,4 +7,12 @@ $(document).ready(function() {
   var avatar4 = chrome.extension.getURL("avatar-4.png");
   var bar = '<div id="zeisshack-bar"><div id="openscope-logo"><img src="' + logo_url + '" /></div><div id="collaborators"><div class="avatar active"><img src="' + avatar1 + '" /></div><div class="avatar active"><img src="' + avatar2 + '" /></div><div class="avatar"><img src="' + avatar3 + '" /></div><div class="avatar"><img src="' + avatar4 + '" /></div></div><div id="meta"><div id="comment-button">Comment</div></div></div>';
   $("body").append(bar);
+
+  $(".avatar").on("click", function() {
+    console.log(3);
+  });
+
+  $("#comment-button").on("click", function() {
+    console.log(4);
+  })
 });
