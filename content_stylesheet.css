@@ -38,10 +38,6 @@
 #collaborators {
   display: flex;
   align-items: center;
-  color: #FFF;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 40px;
   height: 40px;
 }
 
@@ -53,6 +49,7 @@
   position: relative;
   margin-right: 12px;
   background-color: #000;
+  cursor: pointer;
 }
 
 #collaborators .avatar.active {
@@ -78,6 +75,33 @@
   border-radius: 20px;
 }
 
+#collaborators .avatar .name {
+  position: absolute;
+  width: 160px;
+  bottom: -38px;
+  left: 50%;
+  margin-left: -80px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#collaborators .avatar .name .inside {
+  background-color: #00FFDD;
+  color: #005A4E;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 13px;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+#collaborators .avatar:hover > .name {
+  bottom: -28px;
+  opacity: 1;
+}
+
 #meta {
   width: 200px;
   height: 36px;
@@ -95,4 +119,18 @@
   color: #005A4E;
   font-size: 13px;
   text-shadow: none;
+  cursor: pointer;
+}
+
+#blocker {
+  position: fixed;
+}
+
+#blocker.active {
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(255,0,0,.4);
 }
